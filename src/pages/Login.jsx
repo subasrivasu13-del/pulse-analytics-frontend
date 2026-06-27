@@ -2,7 +2,7 @@ import React from 'react';
 import { BarChart3, ShieldCheck } from 'lucide-react';
 
 const Login = () => {
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const handleGoogleLogin = () => {
     window.location.href = `${API_URL}/auth/google`;
